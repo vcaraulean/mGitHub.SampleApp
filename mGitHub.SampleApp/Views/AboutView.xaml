@@ -1,15 +1,72 @@
 ﻿<UserControl x:Class="mGitHub.SampleApp.Views.AboutView"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    FontFamily="{StaticResource PhoneFontFamilyNormal}"
-    FontSize="{StaticResource PhoneFontSizeNormal}"
-    Foreground="{StaticResource PhoneForegroundBrush}"
-    d:DesignHeight="480" d:DesignWidth="480">
-    
-    <Grid x:Name="LayoutRoot" Background="Transparent">
-		<TextBlock Text="Help" Style="{StaticResource PhoneTextLargeStyle}"/>
+			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 mc:Ignorable="d"
+			 FontFamily="{StaticResource PhoneFontFamilyNormal}"
+			 FontSize="{StaticResource PhoneFontSizeNormal}"
+			 Foreground="{StaticResource PhoneForegroundBrush}"
+			 d:DesignHeight="480"
+			 d:DesignWidth="480">
+
+	<Grid x:Name="LayoutRoot"
+		  Background="Transparent">
+		<ScrollViewer>
+			<StackPanel>
+				<TextBlock Style="{StaticResource PhoneTextNormalStyle}"
+						   TextWrapping="Wrap">
+			<Run Foreground="{StaticResource PhoneAccentBrush}"
+					Text="mGitHub.SampleApp " />
+			<Run Text="is a Windown Phone 7 application written using " />
+			<Run Text=" Caliburn.Micro"
+					Foreground="{StaticResource PhoneAccentBrush}" />
+			<Run>.
+			</Run>
+				</TextBlock >
+
+				<TextBlock Style="{StaticResource PhoneTextNormalStyle}"
+						   TextWrapping="Wrap">
+			<Run>
+				Application is offering acces to few projects and repositories on
+			</Run>
+				<Run Text=" GitHub"
+					 Foreground="{StaticResource PhoneAccentBrush}" />
+			<Run>
+				. You can navigate trough preselected repositories and users/projects, see 
+				detais, view project contributors and few other features.
+			</Run>
+				</TextBlock>
+				<TextBlock Style="{StaticResource PhoneTextNormalStyle}"
+						   TextWrapping="Wrap">
+				<Run>
+					It started as a pet-project to try out development on WP7 with Caliburn.Micro.
+					The sample app went so well so that now I am doing everything 
+					possible to offer a greater and better experience of working with
+					GitHub on a Windows Phone 7 device. 				
+					I hope that very soon 
+					 </Run>
+				<Run Text=" a new application will be available "
+						Foreground="{StaticResource PhoneAccentBrush}" />
+				<Run>
+					in Windows Phone Marketplace with 
+					an essentially improved experience and more features.
+				</Run>
+				</TextBlock>
+				<TextBlock Style="{StaticResource PhoneTextNormalStyle}"
+						   TextWrapping="Wrap">
+				<Run>
+					This application will be published on GitHub so everyone interested in WP7 development will 
+					have one more sample project to look at beginning of their exploration.
+				</Run>
+				</TextBlock>
+				<TextBlock Style="{StaticResource PhoneTextNormalStyle}"
+						   TextWrapping="Wrap">
+				<Run>
+					Any feedback, bug reports and suggestions are highly welcome.
+				</Run>
+				</TextBlock>
+			</StackPanel>
+		</ScrollViewer>
 	</Grid>
 </UserControl>
