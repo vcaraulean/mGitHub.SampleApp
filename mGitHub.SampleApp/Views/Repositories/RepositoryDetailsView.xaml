@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="mGitHub.SampleApp.Views.Repositories.RepositoryDetailsView"
+			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+			 xmlns:Converters="clr-namespace:mGitHub.SampleApp.Views.Converters" mc:Ignorable="d"
+			 xmlns:designData="clr-namespace:mGitHub.SampleApp.Views.DesignTime"
+			 FontFamily="{StaticResource PhoneFontFamilyNormal}"
+			 FontSize="{StaticResource PhoneFontSizeNormal}"
+			 Foreground="{StaticResource PhoneForegroundBrush}"
+			 d:DesignHeight="480"
+			 d:DesignWidth="480"
+			 d:DataContext="{d:DesignInstance Type=designData:RepositoryDetailsDesignData, IsDesignTimeCreatable=True}">
+
+	<Grid x:Name="LayoutRoot"
+		  Background="{StaticResource PhoneChromeBrush}">
+		<Grid.Resources>
+			<Converters:NullOrEmptyStringToCollapsedVisibilityConverter x:Key="visibilityConverter" />
+			<Converters:BooleanToYesNoConverter x:Key="boolConverter" />
+		</Grid.Resources>
+		<StackPanel>
+			<TextBlock Text="{Binding Repository.Name}"
+					   Style="{StaticResource PhoneTextTitle2Style}"
+					   Margin="11,10"
+					   />
+			<TextBlock Grid.Row="1"
+					   Visibility="{Binding Repository.Description, Converter={StaticResource visibilityConverter}}"
+					   Text="{Binding Repository.Description}"
+					   TextWrapping="Wrap"
+					   Style="{StaticResource PhoneTextNormalStyle}" />
+				<Grid Margin="0, 25">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto" />
+						<ColumnDefinition />
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition />
+						<RowDefinition />
+						<RowDefinition />
+						<RowDefinition />
+						<RowDefinition />
+						<RowDefinition />
+					</Grid.RowDefinitions>
+
+					<TextBlock Text="owner"
+							   Style="{StaticResource PhoneTextSubtleStyle}" />
+					<TextBlock Grid.Column="1"
+							   Text="{Binding Repository.Owner}"
+							   Style="{StaticResource PhoneTextNormalStyle}" />
+					<TextBlock Text="private"
+							   Grid.Row="1"
+							   Style="{StaticResource PhoneTextSubtleStyle}" />
+					<TextBlock Grid.Row="1"
+							   Grid.Column="1"
+							   Text="{Binding Repository.Private, Converter={StaticResource boolConverter}}"
+							   Style="{StaticResource PhoneTextNormalStyle}" />
+					<TextBlock Text="watchers"
+							   Grid.Row="2"
+							   Style="{StaticResource PhoneTextSubtleStyle}" />
+					<TextBlock Grid.Row="2"
+							   Grid.Column="1"
+							   Text="{Binding Repository.Watchers}"
+							   Style="{StaticResource PhoneTextNormalStyle}" />
+					<TextBlock Text="open issues"
+							   Grid.Row="3"
+							   Style="{StaticResource PhoneTextSubtleStyle}" />
+					<TextBlock Grid.Row="3"
+							   Grid.Column="1"
+							   Text="{Binding Repository.OpenIssues}"
+							   Style="{StaticResource PhoneTextNormalStyle}" />
+					<TextBlock Text="is fork"
+							   Grid.Row="4"
+							   Style="{StaticResource PhoneTextSubtleStyle}" />
+					<TextBlock Grid.Row="4"
+							   Grid.Column="1"
+							   Text="{Binding Repository.Fork, Converter={StaticResource boolConverter}}"
+							   Style="{StaticResource PhoneTextNormalStyle}" />
+					<TextBlock Text="forks"
+							   Grid.Row="5"
+							   Style="{StaticResource PhoneTextSubtleStyle}" />
+					<TextBlock Grid.Row="5"
+							   Grid.Column="1"
+							   Text="{Binding Repository.Forks}"
+							   Style="{StaticResource PhoneTextNormalStyle}" />
+				</Grid>
+			<StackPanel Visibility="{Binding Repository.Homepage, Converter={StaticResource visibilityConverter}}">
+				<TextBlock Text="homepage"
+						   Style="{StaticResource PhoneTextLargeStyle}" />
+				<TextBlock Text="{Binding Repository.Homepage}"
+						   Style="{StaticResource PhoneTextAccentStyle}" />
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</UserControl>

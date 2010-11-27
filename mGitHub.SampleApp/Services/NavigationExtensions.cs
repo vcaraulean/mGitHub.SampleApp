@@ -11,8 +11,8 @@ namespace mGitHub.SampleApp.Services
 			return navigationService.Navigate(To(location));
 		}
 
-		private const string RepositoryPivot = "/Views/RepositoryPivotView.xaml?Username={0}&RepositoryName={1}";
-		private const string UserPivot = "/Views/UserPivotView.xaml?Username={0}";
+		private const string RepositoryPivot = "/Views/Repositories/RepositoryPivotView.xaml?Username={0}&RepositoryName={1}";
+		private const string UserPivot = "/Views/Users/UserPivotView.xaml?Username={0}";
 
 		private static Uri To(GitHubLocation location)
 		{

@@ -94,14 +94,14 @@
     <Compile Include="ViewModels\PanoramaItemsListViewModel.cs" />
     <Compile Include="ViewModels\PivotFix.cs" />
     <Compile Include="ViewModels\PivotViewModel.cs" />
-    <Compile Include="ViewModels\RepositoryContributorsViewModel.cs" />
-    <Compile Include="ViewModels\RepositoryDetailsViewModel.cs" />
-    <Compile Include="ViewModels\RepositoryLinksViewModel.cs" />
-    <Compile Include="ViewModels\RepositoryPivotViewModel.cs" />
-    <Compile Include="ViewModels\UserDetailsViewModel.cs" />
-    <Compile Include="ViewModels\UserPivotViewModel.cs" />
-    <Compile Include="ViewModels\UserRepositoriesViewModel.cs" />
-    <Compile Include="ViewModels\UserWatchingViewModel.cs" />
+    <Compile Include="ViewModels\Repositories\RepositoryContributorsViewModel.cs" />
+    <Compile Include="ViewModels\Repositories\RepositoryDetailsViewModel.cs" />
+    <Compile Include="ViewModels\Repositories\RepositoryLinksViewModel.cs" />
+    <Compile Include="ViewModels\Repositories\RepositoryPivotViewModel.cs" />
+    <Compile Include="ViewModels\Users\UserDetailsViewModel.cs" />
+    <Compile Include="ViewModels\Users\UserPivotViewModel.cs" />
+    <Compile Include="ViewModels\Users\UserRepositoriesViewModel.cs" />
+    <Compile Include="ViewModels\Users\UserWatchingViewModel.cs" />
     <Compile Include="Views\Converters\BooleanToYesNoConverter.cs" />
     <Compile Include="Views\Converters\GravatarIdToImageSourceConverter.cs" />
     <Compile Include="Views\Converters\NullOrEmptyStringToCollapsedVisibilityConverter.cs" />
@@ -120,30 +120,30 @@
       <DependentUpon>ProgressView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ProgressBar\RelativeAnimatingContentControl.cs" />
-    <Compile Include="Views\RepositoryContributorsView.xaml.cs">
+    <Compile Include="Views\Repositories\RepositoryContributorsView.xaml.cs">
       <DependentUpon>RepositoryContributorsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DesignTime\RepositoryDetailsDesignData.cs" />
-    <Compile Include="Views\RepositoryDetailsView.xaml.cs">
+    <Compile Include="Views\Repositories\RepositoryDetailsView.xaml.cs">
       <DependentUpon>RepositoryDetailsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\RepositoryLinksView.xaml.cs">
+    <Compile Include="Views\Repositories\RepositoryLinksView.xaml.cs">
       <DependentUpon>RepositoryLinksView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\RepositoryPivotView.xaml.cs">
+    <Compile Include="Views\Repositories\RepositoryPivotView.xaml.cs">
       <DependentUpon>RepositoryPivotView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DesignTime\UserDetailsDesignData.cs" />
-    <Compile Include="Views\UserDetailsView.xaml.cs">
+    <Compile Include="Views\Users\UserDetailsView.xaml.cs">
       <DependentUpon>UserDetailsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserPivotView.xaml.cs">
+    <Compile Include="Views\Users\UserPivotView.xaml.cs">
       <DependentUpon>UserPivotView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserRepositoriesView.xaml.cs">
+    <Compile Include="Views\Users\UserRepositoriesView.xaml.cs">
       <DependentUpon>UserRepositoriesView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserWatchingView.xaml.cs">
+    <Compile Include="Views\Users\UserWatchingView.xaml.cs">
       <DependentUpon>UserWatchingView.xaml</DependentUpon>
     </Compile>
     <Compile Include="WP7Bootstrapper.cs" />
@@ -177,35 +177,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\RepositoryContributorsView.xaml">
+    <Page Include="Views\Repositories\RepositoryContributorsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\RepositoryDetailsView.xaml">
+    <Page Include="Views\Repositories\RepositoryDetailsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\RepositoryLinksView.xaml">
+    <Page Include="Views\Repositories\RepositoryLinksView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\RepositoryPivotView.xaml">
+    <Page Include="Views\Repositories\RepositoryPivotView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\UserDetailsView.xaml">
+    <Page Include="Views\Users\UserDetailsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\UserPivotView.xaml">
+    <Page Include="Views\Users\UserPivotView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\UserRepositoriesView.xaml">
+    <Page Include="Views\Users\UserRepositoriesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\UserWatchingView.xaml">
+    <Page Include="Views\Users\UserWatchingView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

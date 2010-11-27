@@ -4,6 +4,8 @@ using Caliburn.Micro;
 using mGitHub.SampleApp.Services;
 using mGitHub.SampleApp.Services.RequestProcessing;
 using mGitHub.SampleApp.ViewModels;
+using mGitHub.SampleApp.ViewModels.Repositories;
+using mGitHub.SampleApp.ViewModels.Users;
 using Microsoft.Phone.Tasks;
 
 namespace mGitHub.SampleApp
