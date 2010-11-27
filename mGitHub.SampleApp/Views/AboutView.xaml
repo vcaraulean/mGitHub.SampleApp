@@ -18,19 +18,17 @@
 			<Run Foreground="{StaticResource PhoneAccentBrush}"
 					Text="mGitHub.SampleApp " />
 			<Run Text="is a Windown Phone 7 sample application written using " />
-			<Run Text=" Caliburn.Micro"
-					Foreground="{StaticResource PhoneAccentBrush}" />
-			<Run>.
-			</Run>
+			<Run Text=" 'Caliburn.Micro'."
+				 FontWeight="Bold"/>
 				</TextBlock >
 
 				<TextBlock Style="{StaticResource PhoneTextNormalStyle}"
 						   TextWrapping="Wrap">
 			<Run>
-				Application is offering acces to projects and repositories on
+				Application is providing acces to projects and repositories on
 			</Run>
 			<Run Text=" GitHub"
-					Foreground="{StaticResource PhoneAccentBrush}" />
+				 FontWeight="Bold" />
 			<Run>
 				. You can navigate trough few preselected repositories and users/projects, see 
 				detais, view project contributors and few other features.
@@ -54,15 +52,19 @@
 				</TextBlock>
 				<TextBlock Style="{StaticResource PhoneTextNormalStyle}"
 						   TextWrapping="Wrap">
-				<Run>
-					This application will be published on GitHub so everyone interested in WP7 development will 
-					have one more sample project to look at beginning of their exploration of a new and interesting platform.
+					<Run Foreground="{StaticResource PhoneAccentBrush}"
+						 Text="mGitHub.SampleApp " />
+
+					<Run>
+					source code will be hosted on GitHub so everyone 
+					interested in WP7 development will have one more sample project 
+					to explore when digging in development for WP7 platform.
 				</Run>
 				</TextBlock>
 				<TextBlock Style="{StaticResource PhoneTextNormalStyle}"
 						   TextWrapping="Wrap">
 				<Run>
-					Any feedback, bug reports and suggestions are highly welcome.
+					Any feedback, bug reports and suggestions are always welcome.
 				</Run>
 				</TextBlock>
 				<Button Content="view project on GitHub"

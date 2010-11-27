@@ -1,6 +1,6 @@
 mGitHub.SampleApp is a Windown Phone 7 sample application written using Caliburn.Micro. 
 
-Application is offering acces to projects and repositories on GitHub. 
+Application is provinding acces to projects and repositories on GitHub. 
 You can navigate trough few preselected repositories and users/projects, 
 see detais, view project contributors and few other features.
 
@@ -10,10 +10,11 @@ and better experience of working with GitHub on a Windows Phone 7 device.
 I hope that very soon a new application will be available in 
 Windows Phone Marketplace with an essentially improved experience and more features.
 
-This application will be published on GitHub so everyone interested in WP7 development will 
-have one more sample project to look at beginning of their exploration of a new and interesting platform.
+mGitHub.SampleApp source code will be hosted on GitHub so everyone interested 
+in WP7 development will have one more sample project to explore when 
+digging in development for WP7 platform.
 
-Any feedback, bug reports and suggestions are highly welcome.
+Any feedback, bug reports and suggestions are always welcome.
 
 The project is licenced under MIT licence.
 
