@@ -5,13 +5,17 @@ namespace mGitHub.SampleApp.ViewModels
 	[SurviveTombstone]
 	public class UserPivotViewModel : PivotViewModel
 	{
-		private readonly UserDetailsViewModel userDetails;
-		private readonly UserRepositoriesViewModel userRepositories;
+		private readonly UserDetailsViewModel details;
+		private readonly UserRepositoriesViewModel repositoriesViewModel;
+		private readonly UserWatchingViewModel watchingViewModel;
 
-		public UserPivotViewModel(UserDetailsViewModel userDetails, UserRepositoriesViewModel userRepositories)
+		public UserPivotViewModel(UserDetailsViewModel details,
+		                          UserRepositoriesViewModel repositoriesViewModel,
+		                          UserWatchingViewModel watchingViewModel)
 		{
-			this.userDetails = userDetails;
-			this.userRepositories = userRepositories;
+			this.details = details;
+			this.repositoriesViewModel = repositoriesViewModel;
+			this.watchingViewModel = watchingViewModel;
 		}
 
 		public string Username { get; set; }
@@ -25,16 +29,18 @@ namespace mGitHub.SampleApp.ViewModels
 		{
 			base.OnInitialize();
 
-			Items.Add(userDetails);
-			Items.Add(userRepositories);
+			Items.Add(details);
+			Items.Add(repositoriesViewModel);
+			Items.Add(watchingViewModel);
 
-			ActivateItem(userDetails);
+			ActivateItem(details);
 		}
 
 		protected override void OnActivate()
 		{
-			userDetails.UserName = Username;
-			userRepositories.UserName = Username;
+			details.UserName = Username;
+			repositoriesViewModel.UserName = Username;
+			watchingViewModel.UserName = Username;
 
 			base.OnActivate();
 

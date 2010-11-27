@@ -21,6 +21,7 @@ namespace mGitHub.SampleApp
 			container.RegisterSingleton(typeof(UserPivotViewModel), "UserPivotViewModel", typeof(UserPivotViewModel));
 			container.RegisterSingleton(typeof(UserDetailsViewModel), null, typeof(UserDetailsViewModel));
 			container.RegisterSingleton(typeof(UserRepositoriesViewModel), null, typeof(UserRepositoriesViewModel));
+			container.RegisterSingleton(typeof(UserWatchingViewModel), null, typeof(UserWatchingViewModel));
 			container.RegisterSingleton(typeof(RepositoryPivotViewModel), "RepositoryPivotViewModel", typeof(RepositoryPivotViewModel));
 			container.RegisterSingleton(typeof(RepositoryDetailsViewModel), null, typeof(RepositoryDetailsViewModel));
 			container.RegisterSingleton(typeof(RepositoryLinksViewModel), null, typeof(RepositoryLinksViewModel));

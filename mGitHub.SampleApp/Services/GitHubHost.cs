@@ -31,6 +31,15 @@ namespace mGitHub.SampleApp.Services
         	requestProcessor.Query(url, new Action<RepositoryCollection>(c => resultCallback(c.Repositories)));
         }
 
+		public void GetWatchedRepositories(string userName, Action<IEnumerable<Repository>> callback)
+		{
+			var url = string.Format("{0}{1}",
+				"repos/watched/",
+				userName);
+
+			requestProcessor.Query(url, new Action<RepositoryCollection>(c => callback(c.Repositories)));
+		}
+
 		public void GetRepositoryDetails(string ownerName, string repositoryName, Action<Repository> resultCallback)
         {
             var url = string.Format("{0}{1}/{2}",

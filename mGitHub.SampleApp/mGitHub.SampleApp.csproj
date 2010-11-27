@@ -101,6 +101,7 @@
     <Compile Include="ViewModels\UserDetailsViewModel.cs" />
     <Compile Include="ViewModels\UserPivotViewModel.cs" />
     <Compile Include="ViewModels\UserRepositoriesViewModel.cs" />
+    <Compile Include="ViewModels\UserWatchingViewModel.cs" />
     <Compile Include="Views\Converters\BooleanToYesNoConverter.cs" />
     <Compile Include="Views\Converters\GravatarIdToImageSourceConverter.cs" />
     <Compile Include="Views\Converters\NullOrEmptyStringToCollapsedVisibilityConverter.cs" />
@@ -141,6 +142,9 @@
     </Compile>
     <Compile Include="Views\UserRepositoriesView.xaml.cs">
       <DependentUpon>UserRepositoriesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserWatchingView.xaml.cs">
+      <DependentUpon>UserWatchingView.xaml</DependentUpon>
     </Compile>
     <Compile Include="WP7Bootstrapper.cs" />
   </ItemGroup>
@@ -198,6 +202,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserRepositoriesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserWatchingView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

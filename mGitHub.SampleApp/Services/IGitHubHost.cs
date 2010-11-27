@@ -10,5 +10,6 @@ namespace mGitHub.SampleApp.Services
 		void GetRepositoryDetails(string ownerName, string repositoryName, Action<Repository> resultCallback);
 	    void GetUserRepositories(string userName, Action<IEnumerable<Repository>> resultCallback);
 		void GetRepositoryContributors(string ownerName, string RepositoryName, Action<IEnumerable<Contributor>> resultCallback);
+		void GetWatchedRepositories(string userName, Action<IEnumerable<Repository>> callback);
 	}
 }
