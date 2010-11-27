@@ -1,0 +1,11 @@
+﻿<Application 
+    x:Class="mGitHub.SampleApp.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sample="clr-namespace:mGitHub.SampleApp">
+    <!--Application Resources-->
+    <Application.Resources>
+		<ResourceDictionary>
+			<sample:WP7Bootstrapper x:Key="bootstrapper" />			
+		</ResourceDictionary>		
+    </Application.Resources>
+</Application>
