@@ -1,0 +1,7 @@
+Rob Eisenberg and Christopher Bennage for Caliburn.Micro (http://caliburnmicro.codeplex.com/)
+Jeff Wilcox (http://www.jeff.wilcox.name/) for PerformanceProgressBar
+Panorama background image by cobrasoft (http://www.sxc.hu/photo/1271413)
+
+Special thanks to:
+ - my friend Dumitru Cantemir for reviewing and helping me with some code. 
+ - his wife, Natasa Cantemir for the icon image

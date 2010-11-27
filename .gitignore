@@ -1,7 +1,8 @@
 
 # Standard VS.NET and ReSharper 
-src/*/obj
-src/*/bin
+obj
+bin
+Bin
 *.csproj.user
 _ReSharper*
 *.ReSharper

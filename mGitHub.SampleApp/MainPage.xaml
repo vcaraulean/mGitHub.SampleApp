@@ -10,15 +10,15 @@
     shell:SystemTray.IsVisible="False">
 
     <Grid x:Name="LayoutRoot" Background="Transparent">
-		<controls:Panorama Title="GitHub sample app ">
+		<controls:Panorama Title="mGitHub sample app ">
             <controls:Panorama.Background>
                 <ImageBrush ImageSource="PanoramaBackground.jpg"/>
             </controls:Panorama.Background>
 
 			<controls:PanoramaItem x:Name="Favorites"
-								   Header="favorites" />
+								   Header="my favorites" />
 			<controls:PanoramaItem x:Name="MostViewed"
-								   Header="m/watched" />
+								   Header="interesting" />
 			<controls:PanoramaItem x:Name="About"
 								   Header="about" />
 		</controls:Panorama>

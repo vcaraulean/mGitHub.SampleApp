@@ -5,16 +5,15 @@ namespace mGitHub.SampleApp.ViewModels
 {
 	public class MostViewedViewModel : PanoramaItemsListViewModel
 	{
-		public MostViewedViewModel(INavigationService navigationService)
-			: base(navigationService)
+		public MostViewedViewModel(INavigationService navigationService) : base(navigationService)
 		{
-			DisplayName = "most viewed";
-
 			Items.AddRange(new[]
 			{
-				new GitHubLocation {Name = "Rails", RelativeAddress = "rails/rails"},
+				new GitHubLocation {Name = "git", RelativeAddress = "git/git"},
 				new GitHubLocation {Name = "jquery", RelativeAddress = "jquery/jquery"},
-				new GitHubLocation {Name = "node", RelativeAddress = "ry/node"},
+				new GitHubLocation {Name = "Ruby on Rails", RelativeAddress = "rails/rails"},
+				new GitHubLocation {Name = "Apache Software Foundation", RelativeAddress = "apache"},
+				new GitHubLocation {Name = "Facebook", RelativeAddress = "facebook"},
 			});
 		}
 	}
