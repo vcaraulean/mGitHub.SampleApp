@@ -17,7 +17,7 @@
 						   TextWrapping="Wrap">
 			<Run Foreground="{StaticResource PhoneAccentBrush}"
 					Text="mGitHub.SampleApp " />
-			<Run Text="is a Windown Phone 7 application written using " />
+			<Run Text="is a Windown Phone 7 sample application written using " />
 			<Run Text=" Caliburn.Micro"
 					Foreground="{StaticResource PhoneAccentBrush}" />
 			<Run>.
