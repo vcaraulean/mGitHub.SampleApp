@@ -17,6 +17,7 @@ namespace mGitHub.SampleApp.ViewModels
 				new GitHubLocation{Name = "AutoMapper", RelativeAddress= "jbogard/AutoMapper"},
 				new GitHubLocation{Name = "Mono Project", RelativeAddress= "mono"},
 				new GitHubLocation{Name = "RavenDb", RelativeAddress= "ravendb"},
+				new GitHubLocation{Name = "Mongo C# driver", RelativeAddress= "mongodb/mongo-csharp-driver"},
 			});
 		}
 	}

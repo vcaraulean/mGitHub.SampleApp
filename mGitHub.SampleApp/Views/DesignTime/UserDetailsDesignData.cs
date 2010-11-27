@@ -13,7 +13,7 @@ namespace mGitHub.SampleApp.Views.DesignTime
 				Blog = "blog.caraulean.com",
 				Email = "caraulean@gmail.com",
 				Location = "Geneva, Switzerland",
-				Company = "authentic solutions",
+				Company = "complete solutions",
 				CreatedAt = new DateTime(2009, 03, 03),
 				PublicRepoCount = 5,
 				Following = 10,

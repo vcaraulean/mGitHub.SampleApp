@@ -6,16 +6,16 @@ namespace mGitHub.SampleApp.Views.DesignTime
 	{
 		public RepositoryDetailsDesignData()
 		{
-			Repository = new Repository()
+			Repository = new Repository
 			{
-				Name = "my main repo",
-				Description = "this is description of the repository, rather long",
-				Homepage = "http://github.com",
+				Name = "mGitHub.SampleApp",
+				Description = "Sample app for Windows Phone 7 using Caliburn.Micro",
+				Homepage = "http://mgithub.com",
 				Owner = "vcaraulean",
 				Private = false,
-				URL = "http://github.com/vcaraulean/repo",
-				Watchers = 7,
-				OpenIssues = 3,
+				URL = "http://github.com/vcaraulean/mGitHub.SampleApp",
+				Watchers = 1,
+				OpenIssues = 0,
 				Fork = true,
 				Forks = 5,
 			};

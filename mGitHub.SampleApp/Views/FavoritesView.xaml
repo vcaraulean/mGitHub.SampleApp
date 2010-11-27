@@ -20,7 +20,7 @@
 								Micro:Message.Attach="[Event MouseLeftButtonUp] = [Action OpenLocation($datacontext)]">
 						<TextBlock Text="{Binding Name}"
 								   Style="{StaticResource PhoneTextLargeStyle}" />
-						<TextBlock Text="{Binding Address}"
+						<TextBlock Text="{Binding RelativeAddress}"
 								   Margin="12,-6,12,0"
 								   Style="{StaticResource PhoneTextSubtleStyle}" />
 					</StackPanel>

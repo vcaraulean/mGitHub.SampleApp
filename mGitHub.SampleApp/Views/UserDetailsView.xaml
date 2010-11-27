@@ -6,6 +6,7 @@
 			 FontFamily="{StaticResource PhoneFontFamilyNormal}"
 			 FontSize="{StaticResource PhoneFontSizeNormal}"
 			 Foreground="{StaticResource PhoneForegroundBrush}"
+			 xmlns:designData="clr-namespace:mGitHub.SampleApp.Views.DesignTime"
 			 d:DataContext="{d:DesignInstance Type=designData:UserDetailsDesignData, IsDesignTimeCreatable=True}"
 			 d:DesignHeight="480"
 			 d:DesignWidth="480">

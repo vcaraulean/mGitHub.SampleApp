@@ -3,7 +3,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Micro="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro" xmlns:Converters="clr-namespace:mGitHub.SampleApp.Views.Converters" mc:Ignorable="d"
-    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+			 xmlns:designData="clr-namespace:mGitHub.SampleApp.Views.DesignTime"
+			 FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     d:DesignHeight="480" d:DesignWidth="480" d:DataContext="{d:DesignInstance Type=designData:ContributorsDesignData, IsDesignTimeCreatable=True}">
@@ -16,16 +17,16 @@
 			<RowDefinition Height="Auto"/>
 			<RowDefinition />
 		</Grid.RowDefinitions>
-		<TextBlock Text="ranged by number of contributions" 
+		<TextBlock Text="by number of contributions" 
 				   HorizontalAlignment="Right"
 				   Style="{StaticResource PhoneTextSubtleStyle}" />
 		<ListBox Grid.Row="1" ItemsSource="{Binding Contributors}"
 				 Margin="0, 10, 0, 0">
             <ListBox.ItemTemplate>
                 <DataTemplate>
+					<!--Delete 'Micro:Message.Attach= ...' line if you want to see data in Design Time-->
 					<StackPanel Orientation="Horizontal"
-						Micro:Message.Attach="[Event MouseLeftButtonUp] = [Action Show($datacontext)]"
-						>
+								Micro:Message.Attach="[Event MouseLeftButtonUp] = [Action Show($datacontext)]">
 						<TextBlock Text="{Binding Contributions}"
 								   Style="{StaticResource PhoneTextLargeStyle}"
 								   TextAlignment="Right"
