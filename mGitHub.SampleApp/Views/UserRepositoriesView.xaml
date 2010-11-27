@@ -12,7 +12,7 @@
 		<ListBox x:Name="Repositories">
 			<ListBox.ItemTemplate>
 				<DataTemplate>
-					<StackPanel Micro:Message.Attach="[Event MouseLeftButtonUp] = [Action Open($datacontext)]">
+					<StackPanel Micro:Message.Attach="[Event MouseLeftButtonUp] = [Action Open($datacontext)]" Margin="0, 10, 0, 0">
 						<TextBlock Text="{Binding Name}"
 								   Style="{StaticResource PhoneTextLargeStyle}"
 								   />

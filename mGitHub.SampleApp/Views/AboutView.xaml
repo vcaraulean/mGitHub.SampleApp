@@ -28,26 +28,26 @@
 				<TextBlock Style="{StaticResource PhoneTextNormalStyle}"
 						   TextWrapping="Wrap">
 			<Run>
-				Application is offering acces to few projects and repositories on
+				Application is offering acces to projects and repositories on
 			</Run>
-				<Run Text=" GitHub"
-					 Foreground="{StaticResource PhoneAccentBrush}" />
+			<Run Text=" GitHub"
+					Foreground="{StaticResource PhoneAccentBrush}" />
 			<Run>
-				. You can navigate trough preselected repositories and users/projects, see 
+				. You can navigate trough few preselected repositories and users/projects, see 
 				detais, view project contributors and few other features.
 			</Run>
 				</TextBlock>
 				<TextBlock Style="{StaticResource PhoneTextNormalStyle}"
 						   TextWrapping="Wrap">
 				<Run>
-					It started as a pet-project to try out development on WP7 with Caliburn.Micro.
-					The sample app went so well so that now I am doing everything 
+					It started as a pet-project to try out development for WP7 with Caliburn.Micro.
+					All went so well so that now I am doing everything 
 					possible to offer a greater and better experience of working with
 					GitHub on a Windows Phone 7 device. 				
 					I hope that very soon 
 					 </Run>
 				<Run Text=" a new application will be available "
-						Foreground="{StaticResource PhoneAccentBrush}" />
+					 Foreground="{StaticResource PhoneAccentBrush}" />
 				<Run>
 					in Windows Phone Marketplace with 
 					an essentially improved experience and more features.
@@ -57,7 +57,7 @@
 						   TextWrapping="Wrap">
 				<Run>
 					This application will be published on GitHub so everyone interested in WP7 development will 
-					have one more sample project to look at beginning of their exploration.
+					have one more sample project to look at beginning of their exploration of a new and interesting platform.
 				</Run>
 				</TextBlock>
 				<TextBlock Style="{StaticResource PhoneTextNormalStyle}"
