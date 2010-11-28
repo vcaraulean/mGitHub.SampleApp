@@ -147,7 +147,7 @@
     <Compile Include="Views\Users\UserWatchingView.xaml.cs">
       <DependentUpon>UserWatchingView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WP7Bootstrapper.cs" />
+    <Compile Include="Bootstrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

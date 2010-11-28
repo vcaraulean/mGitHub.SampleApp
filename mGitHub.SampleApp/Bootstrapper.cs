@@ -10,16 +10,17 @@ using Microsoft.Phone.Tasks;
 
 namespace mGitHub.SampleApp
 {
-	public class WP7Bootstrapper : PhoneBootstrapper
+	public class Bootstrapper : PhoneBootstrapper
 	{
 		readonly PhoneContainer container;
 
-		public WP7Bootstrapper()
+		public Bootstrapper()
 		{
 			container = new PhoneContainer();
 			container.RegisterSingleton(typeof(MainPageViewModel), "MainPageViewModel", typeof(MainPageViewModel));
 			container.RegisterSingleton(typeof(FavoritesViewModel), null, typeof(FavoritesViewModel));
 			container.RegisterSingleton(typeof(MostViewedViewModel), null, typeof(MostViewedViewModel));
+			container.RegisterSingleton(typeof(AboutViewModel), null, typeof(AboutViewModel));
 			container.RegisterSingleton(typeof(UserPivotViewModel), "UserPivotViewModel", typeof(UserPivotViewModel));
 			container.RegisterSingleton(typeof(UserDetailsViewModel), null, typeof(UserDetailsViewModel));
 			container.RegisterSingleton(typeof(UserRepositoriesViewModel), null, typeof(UserRepositoriesViewModel));
@@ -28,7 +29,6 @@ namespace mGitHub.SampleApp
 			container.RegisterSingleton(typeof(RepositoryDetailsViewModel), null, typeof(RepositoryDetailsViewModel));
 			container.RegisterSingleton(typeof(RepositoryLinksViewModel), null, typeof(RepositoryLinksViewModel));
 			container.RegisterSingleton(typeof(RepositoryContributorsViewModel), null, typeof(RepositoryContributorsViewModel));
-			container.RegisterSingleton(typeof(AboutViewModel), null, typeof(AboutViewModel));
 			container.RegisterSingleton(typeof(IProgressService), null, typeof(ProgressService));
 			container.RegisterSingleton(typeof(ISimpleCache), null, typeof(SimpleCache));
 			container.RegisterSingleton(typeof(IRequestProcessor), null, typeof(CachingRequestProcessor));
@@ -37,7 +37,6 @@ namespace mGitHub.SampleApp
 
 			container.RegisterInstance(typeof(INavigationService), null, new FrameAdapter(RootFrame));
 			container.RegisterInstance(typeof(IPhoneService), null, new PhoneApplicationServiceAdapter(PhoneService));
-
 
 			container.Activator.InstallLauncher<WebBrowserTask>();
 			container.Activator.InstallLauncher<EmailComposeTask>();

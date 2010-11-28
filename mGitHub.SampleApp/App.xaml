@@ -5,7 +5,7 @@
     <!--Application Resources-->
     <Application.Resources>
 		<ResourceDictionary>
-			<sample:WP7Bootstrapper x:Key="bootstrapper" />			
+			<sample:Bootstrapper x:Key="bootstrapper" />			
 		</ResourceDictionary>		
     </Application.Resources>
 </Application>
