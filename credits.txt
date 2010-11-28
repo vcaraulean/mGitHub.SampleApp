@@ -7,4 +7,4 @@ Panorama background image by cobrasoft (http://www.sxc.hu/photo/1271413)
 
 Special thanks to:
  - my friend Dumitru Cantemir for reviewing and helping me with some code. 
- - his wife, Natalia Cantemir for the icon image
+ 
