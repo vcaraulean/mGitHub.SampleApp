@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.0">
-  <App xmlns="" ProductID="{e881da30-3361-4059-87f6-af96e5b38c81}" Title="mGitHub.SampleApp" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Valeriu Caraulean" Description="Sample description" Publisher="mGitHub">
+  <App xmlns="" ProductID="{e881da30-3361-4059-87f6-af96e5b38c81}" Title="mGitHub Sample App" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Valeriu Caraulean" Description="Sample description" Publisher="mGitHub">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES" />
@@ -23,7 +23,7 @@
         <TemplateType5>
           <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
           <Count>0</Count>
-          <Title>mGitHub.SampleApp</Title>
+          <Title>GitHub app</Title>
         </TemplateType5>
       </PrimaryToken>
     </Tokens>
