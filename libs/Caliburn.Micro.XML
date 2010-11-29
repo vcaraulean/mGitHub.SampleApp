@@ -64,6 +64,16 @@
             Occurs when the application is closing.
             </summary>
         </member>
+        <member name="P:Caliburn.Micro.IPhoneService.UserIdleDetectionMode">
+            <summary>
+            Gets or sets whether user idle detection is enabled.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.IPhoneService.ApplicationIdleDetectionMode">
+            <summary>
+            Gets or sets whether application idle detection is enabled.
+            </summary>
+        </member>
         <member name="T:Caliburn.Micro.PhoneApplicationServiceAdapter">
             <summary>
             An implementation of <see cref="T:Caliburn.Micro.IPhoneService"/> that adapts <see cref="T:Microsoft.Phone.Shell.PhoneApplicationService"/>.
@@ -105,16 +115,27 @@
             Occurs when the application is closing.
             </summary>
         </member>
+        <member name="P:Caliburn.Micro.PhoneApplicationServiceAdapter.UserIdleDetectionMode">
+            <summary>
+            Gets or sets whether user idle detection is enabled.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.PhoneApplicationServiceAdapter.ApplicationIdleDetectionMode">
+            <summary>
+            Gets or sets whether application idle detection is enabled.
+            </summary>
+        </member>
         <member name="T:Caliburn.Micro.InstanceActivator">
             <summary>
             Designed to be plugged into an IoC Container, this class inspects instances to determine if they need access to the launcher/chooser mechanism.
             </summary>
         </member>
-        <member name="M:Caliburn.Micro.InstanceActivator.#ctor(System.Func{System.Type,System.Object})">
+        <member name="M:Caliburn.Micro.InstanceActivator.#ctor(Caliburn.Micro.PhoneBootstrapper,System.Func{System.Type,System.Object})">
             <summary>
             Creates an instance of the <see cref="T:Caliburn.Micro.InstanceActivator"/>
             </summary>
             <param name="getInstance">A factory method which should take a <see cref="T:System.Type"/> and return an instance of that type from the IoC container.</param>
+            <param name="bootstrapper">The bootstrapper.</param>
         </member>
         <member name="M:Caliburn.Micro.InstanceActivator.InstallChooser``2">
             <summary>
@@ -828,6 +849,11 @@
             The root frame used for navigation.
             </summary>
         </member>
+        <member name="E:Caliburn.Micro.PhoneBootstrapper.ResurrectionComplete">
+            <summary>
+            Occurs after resurrection has completed.
+            </summary>
+        </member>
         <member name="T:Caliburn.Micro.Parser">
             <summary>
             Parses text into a fully functional set of <see cref="T:System.Windows.Interactivity.TriggerBase"/> instances with <see cref="T:Caliburn.Micro.ActionMessage"/>.
@@ -840,6 +866,13 @@
             <param name="target">The target.</param>
             <param name="text">The message text.</param>
             <returns>The triggers parsed from the text.</returns>
+        </member>
+        <member name="M:Caliburn.Micro.Parser.CreateMessage(System.Windows.DependencyObject,System.String)">
+            <summary>
+            </summary>
+            <param name="target">The target of the message.</param>
+            <param name="messageText">The textual message dsl.</param>
+            <returns>The created message.</returns>
         </member>
         <member name="T:Caliburn.Micro.ActivationEventArgs">
             <summary>
@@ -1017,16 +1050,6 @@
             The context used during the execution of an Action or its guard.
             </summary>
         </member>
-        <member name="F:Caliburn.Micro.ActionExecutionContext.Message">
-            <summary>
-            The message being executed.
-            </summary>
-        </member>
-        <member name="F:Caliburn.Micro.ActionExecutionContext.Source">
-            <summary>
-            The source from which the message originates.
-            </summary>
-        </member>
         <member name="F:Caliburn.Micro.ActionExecutionContext.EventArgs">
             <summary>
             Any event arguments associated with the action's invocation.
@@ -1042,6 +1065,16 @@
             Determines whether the action can execute.
             </summary>
             <remarks>Returns true if the action can execute, false otherwise.</remarks>
+        </member>
+        <member name="P:Caliburn.Micro.ActionExecutionContext.Message">
+            <summary>
+            The message being executed.
+            </summary>
+        </member>
+        <member name="P:Caliburn.Micro.ActionExecutionContext.Source">
+            <summary>
+            The source from which the message originates.
+            </summary>
         </member>
         <member name="P:Caliburn.Micro.ActionExecutionContext.Target">
             <summary>
@@ -1130,11 +1163,12 @@
             A basic implementation of <see cref="T:Caliburn.Micro.INavigationService"/> designed to adapt the <see cref="T:System.Windows.Controls.Frame"/> control.
             </summary>
         </member>
-        <member name="M:Caliburn.Micro.FrameAdapter.#ctor(System.Windows.Controls.Frame)">
+        <member name="M:Caliburn.Micro.FrameAdapter.#ctor(System.Windows.Controls.Frame,System.Boolean)">
             <summary>
             Creates an instance of <see cref="T:Caliburn.Micro.FrameAdapter"/>
             </summary>
             <param name="frame">The frame to represent as a <see cref="T:Caliburn.Micro.INavigationService"/>.</param>
+            <param name="treatViewAsLoaded">Tells the frame adapter to assume that the view has already been loaded by the time OnNavigated is called. This is necessary when using the TransitionFrame.</param>
         </member>
         <member name="M:Caliburn.Micro.FrameAdapter.OnNavigating(System.Object,System.Windows.Navigation.NavigatingCancelEventArgs)">
             <summary>
@@ -2142,6 +2176,11 @@
             <param name="instance">The instance to determine the key for.</param>
             <param name="rootKey">The root key.</param>
             <returns>The key.</returns>
+        </member>
+        <member name="P:Caliburn.Micro.SurviveTombstone.SerializeComplexType">
+            <summary>
+             Indicates that the entire value of the attributed property should be stored in the phone state.
+            </summary>
         </member>
         <member name="T:Caliburn.Micro.TypeDescriptor">
             <summary>

@@ -16,7 +16,7 @@ namespace mGitHub.SampleApp
 
 		public Bootstrapper()
 		{
-			container = new PhoneContainer();
+			container = new PhoneContainer(this);
 			container.RegisterSingleton(typeof(MainPageViewModel), "MainPageViewModel", typeof(MainPageViewModel));
 			container.RegisterSingleton(typeof(FavoritesViewModel), null, typeof(FavoritesViewModel));
 			container.RegisterSingleton(typeof(MostViewedViewModel), null, typeof(MostViewedViewModel));

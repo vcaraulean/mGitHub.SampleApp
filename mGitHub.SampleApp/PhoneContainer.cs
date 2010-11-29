@@ -5,9 +5,9 @@ namespace mGitHub.SampleApp
 {
 	public class PhoneContainer : SimpleContainer
 	{
-		public PhoneContainer()
+		public PhoneContainer(Bootstrapper bootStrapper)
 		{
-			Activator = new InstanceActivator(type => GetInstance(type, null));
+			Activator = new InstanceActivator(bootStrapper, type => GetInstance(type, null));
 		}
 
 		public InstanceActivator Activator { get; private set; }
