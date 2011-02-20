@@ -19,3 +19,6 @@ Any feedback, bug reports and suggestions are always welcome.
 The project is licenced under MIT licence.
 
 See also credits.txt
+
+The 'big brother' of this sample app, a full featured Windows Phone 7 client application
+for github, is available in Marketplace. See http://mgithub.com for details.
