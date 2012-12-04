@@ -21,4 +21,4 @@ The project is licenced under MIT licence.
 See also credits.txt
 
 The 'big brother' of this sample app, a full featured Windows Phone 7 client application
-for github, is available in Marketplace. See http://caraulean.com/mgithub for details.
+for github, is available in Marketplace. See http://gitstation.com for details.
